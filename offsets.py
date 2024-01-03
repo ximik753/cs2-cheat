@@ -3,6 +3,7 @@ import requests
 
 class OffsetManager:
     def __init__(self):
+        print('[-] Fetching offset...')
         self.offsets = requests.get(
             'https://raw.githubusercontent.com/a2x/cs2-dumper/main/generated/offsets.json').json()
         self.clientdll = requests.get(
