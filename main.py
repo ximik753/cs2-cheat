@@ -80,7 +80,9 @@ def main():
     while True:
         try:
             trigger(client, pm)
+            time.sleep(uniform(0.01, 0.03))
             glow(client, pm)
+            time.sleep(uniform(0.01, 0.03))
         except KeyboardInterrupt:
             break
 
