@@ -75,7 +75,7 @@ def main():
     pm = pymem.Pymem("cs2.exe")
     client = pymem.process.module_from_name(pm.process_handle, "client.dll").lpBaseOfDll
     print("Cheat made by ximik753 (https://github.com/ximik753/cs2-cheat)")
-    print(f'[-] Cheat started\n. [-]Trigger bot key: {triggerKey.upper()}')
+    print(f'[-] Cheat started\n[-] Trigger bot key: {triggerKey.upper()}')
 
     while True:
         try:
